@@ -1,0 +1,108 @@
+    .header {
+      background-color: #20cae0;
+      padding: 1rem 2rem;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-img {
+      height: 3.5rem;
+      max-width: 100%;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+      color: white;
+    }
+
+    .header-text h2 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .header-text p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    /* Apply font styles like your Fiori Services example */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #0b0b0b;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      /* margin-bottom: 1rem; */
+    }
+
+    ul li {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+     
+    /* Responsive fix */
+ @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-img {
+    margin-bottom: 0.5rem;
+  }
+
+  .header-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700; /* Bold */
+    line-height: 1.3;
+  }
+
+  .header-text p {
+    font-size: 1.25rem;
+    font-weight: 600; /* Semi-bold */
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .logo-img {
+    height: 2.8rem;
+  }
+
+  .header {
+    padding: 1rem 1rem;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>ImpleVista - FedEx SAP Integration with BTP & Fiori | Case Study</title>
+
+  <link rel="icon" href="./images/Vlogo.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/cstud.css" />
+  <link rel="stylesheet" href="./css/services.css" />
+  <link rel="stylesheet" href="./css/readme.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="./images/ImplevistaLogo.png" alt="ImpleVista Logo" />
+    </a>
+    <div class="header-text">
+      <h2>FEDEX INTEGRATION</h2>
+      <h4>
+      <p>Connecting SAP S/4HANA RISE with FedEx using SAP BTP</p>
+      </h4>
+    </div>
+  </header>
+
+  <br><br>
+ <main class="container my-5">
+
+  <!-- FedEx Integration Overview -->
+  <section class="mb-5" data-aos="fade-up">
+    <h2 class="text-center mb-3"><i class="fas fa-shipping-fast" style="color:#007bff;"></i> FedEx Integration through BTP: S/4 RISE - Fiori</h2>
+    <p class="neat-paragraph text-center">
+      Integrating FedEx with S/4HANA RISE using SAP Business Technology Platform (BTP) and Fiori applications enables organizations to streamline shipping operations within the SAP landscape.<br>
+      BTP services like SAP Integration Suite act as middleware between S/4HANA and FedEx APIs for secure data exchange. These APIs are consumed via HTTPS REST calls, while S/4HANA exposes logistics or delivery data through OData services or BAPIs.
+    </p>
+    <div class="text-center">
+      <img src="./csimgs/cpcs1.png" alt="FedEx integration through BTP" class="img-fluid" style="max-width: 70%;" />
+    </div>
+  </section>
+
+  <!-- FedEx Shipping API -->
+  <section class="mb-5" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-center mb-3"><i class="fas fa-box" style="color:#28a745;"></i> FedEx Shipping API Integration</h2>
+    <p class="neat-paragraph text-center">
+      The FedEx Shipping API is used to generate shipping labels and retrieve tracking numbers. Within SAP Integration Suite, an iFlow is created to extract delivery or sales order data from SAP S/4HANA, transform it into JSON format, and send it through an HTTP receiver adapter—triggering label creation directly from SAP.
+    </p>
+    <div class="text-center">
+      <img src="./csimgs/cpcs2.png" alt="FedEx Shipping API Integration" class="img-fluid" style="max-width: 80%;" />
+    </div>
+  </section>
+
+  <!-- FedEx Postal Code API -->
+  <section class="mb-5" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="text-center mb-3"><i class="fas fa-map-marked-alt" style="color:#e83e8c;"></i> FedEx Postal Code (Address Validation) API Integration</h2>
+    <p class="neat-paragraph text-center">
+      The Postal Code API helps validate recipient addresses before shipping. SAP Integration Suite sends user-entered or system-stored addresses to FedEx, which responds with validation results or suggestions—reducing return-to-sender incidents and ensuring address accuracy.
+    </p>
+    <div class="text-center">
+      <img src="./csimgs/cpcs3.png" alt="FedEx Postal Code Validation" class="img-fluid" style="max-width: 80%;" />
+    </div>
+  </section>
+
+  <!-- Testing in Postman -->
+  <section class="mb-5" data-aos="fade-up" data-aos-delay="300">
+    <h2 class="text-center mb-3"><i class="fas fa-terminal" style="color:#6610f2;"></i> Successful API Testing in Postman</h2>
+    <div class="text-center">
+      <img src="./csimgs/cpcs4.png" alt="FedEx Shipping API Test" class="img-fluid mb-3" style="max-width: 80%;" />
+      <img src="./csimgs/cpcs5.png" alt="Postal Code Validation Test" class="img-fluid" style="max-width: 80%;" />
+    </div>
+    <div style="text-align: center;">
+    <a href="index.html#portfolio" class="btn1">← Back to Blog</a>
+    </div>
+    </div>
+  </section>
+</main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    }); 
+    </script>
+</body>
+</html>
