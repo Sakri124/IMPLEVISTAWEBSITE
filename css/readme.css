@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* logo to the left */
+  width: 100%;
+  height: 64px;
+  padding: 0 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(32, 202, 224, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* LOGO section */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 90px; /* reduced from 50px */
+  width: 50%;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+
+.logo-container span {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ABOUT SECTION */
+.about1 {
+  background: linear-gradient(to right, #f0f4f8, #ffffff);
+  padding: 120px 20px 80px; /* enough top space due to fixed header */
+}
+
+.about1 .heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.about1 .heading::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 5px;
+}
+
+.about1 .content {
+  max-width: 950px;
+  margin: auto;
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #333;
+}
+
+.about1 .content p i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+.btn1:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .logo-container img {
+    height: auto;  /* slightly smaller for mobile */
+    width: 50%;
+  }
+
+  .logo-container span {
+    font-size: 1.4rem;
+  }
+
+  .about1 .content {
+    padding: 30px 20px;
+    font-size: 1rem;
+  }
+
+  .about1 .heading {
+    font-size: 2.2rem;
+  }
+}
